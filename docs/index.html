@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CS184 Final Project</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Style Transfer Art Gallery</h1>
+    <h4>Rachael Boyle, Tyler Yath</h4>
+    <div class="image-container">
+      <img class="example" src="images/wave.png">
+      <div></div>
+      <img class="example" src="images/sf.png">
+    </div>
+    <div class="main-text">
+      <h3>Summary</h3>
+      <p>We will be creating an online art gallery of style transferred images with various styles. The images will be generated following the original style transfer paper, Gatys 2015, based on convolutional neural networks.</p>
+    </div>
+    <div class="main-text">
+      <h3>Problem Description</h3>
+      <p>Machine learning has experienced great success in commercial use, but we wanted to explore creative and artistic use cases. There seems to be great opportunity to create ML tools for artists to enhance their workflows. In order to highlight this rapidly evolving subfield we are building a gallery of style transfer images to showcase AI generated art pieces.</p>
+      <p>We will utilize the various resources we have found online as well as our acquired ML knowledge from CS189. (The most recent CS189 homework was entirely about convolutional neural nets and implementing them from scratch, making us more equipped to handle this project utilizing CNNs in an artistic way.)</p>
+      <p>We will begin by familiarizing ourselves with the problem space by synthesizing the different research papers we found. Then we will either implement our own CNN or utilize a pre-trained model that we can use to do our first style. Once we are confident with that workflow, we can scale up with more styles and generate different input images with them. From there, we will set up the web gallery and, time permitting, implement our reach goals.</p>
+      <p>There are many challenges to implementing style transfer with the biggest being the tuning of our convolutional neural nets (whether off the shelf or implemented from scratch) in order to produce the results that we want. Neural network design is a naturally empirical process, which means that we will need to do many iterations of trial and error to get pleasing images. Thankfully, cloud computing with GPUs will make this feasible within our restricted timeline.</p>
+      <p>In terms of procuring ML specific resources, we have access to compute via Google Cloud (GPU + $300 Credit). There are also plenty of baseline implementations of CNNs to refer to as well as style transfer specific tutorials. Large amounts of data are not needed to do style transfer when using pretrained models, but if we were to need a large dataset, there are plenty of image specific ones such as ImageNet and CIFAR-10. There are also a plethora of paintings and images to draw from as material for style and content images.</p>
+    </div>
+    <div class="main-text">
+      <h3>Goals and Deliverables</h3>
+      <p>Baseline Goals: A pre-trained style transfer network (i.e. Starry Night, The Great Wave off Kanagawa) for any input image, with a static art gallery with each piece containing the content image, the style image, and the transfer image for our demo</p>
+      <p>Reach Goals: A dynamic art gallery of images for our demo; arbitrary style transfer (can take any input style and any input image); style transfer for videos</p>
+      <p>Metrics: Overall subjective quality of the generated images. Runtime efficiency of the solution</p>
+      <p>Analysis: Explain how style transfer actually works on a deeper level</p>
+    </div>
+    <div class="main-text">
+      <h3>Schedule</h3>
+      <ul>
+        <li>May 1st - May 3rd:
+          <ul>
+            <li>Read research papers and posts (listed below in resources) to familiarize ourselves with the problem space</li>
+            <li>Create style transfer network for one painting/style and run on different input images</li>
+            <li>Submit milestone webpage, presentation slides, and video</li>
+
+          </ul>
+        </li>
+        <li>May 4th - May 8th:
+          <ul>
+            <li>Build different models for different styles and render more images</li>
+            <li>Start building our website gallery</li>
+            <li>Implement reach goals, starting with dynamic web gallery, then style transfer videos</li>
+          </ul>
+        </li>
+        <li>May 9th:
+          <ul>
+            <li>Create presentation slides</li>
+            <li>Prep 5 minute presentation</li>
+          </ul>
+        </li>
+        <li>May 10th:
+          <ul>
+            <li>Presentation Day!</li>
+          </ul>
+        </li>
+        <li>May 11th - 14th:
+          <ul>
+            <li>Polish off our implementation</li>
+            <li>Create and submit final deliverables</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-text">
+      <h3>Resources</h3>
+      <ul>
+        <li>References
+          <ul>
+            <li><a href="https://arxiv.org/pdf/1508.06576.pdf">Main Paper</a></li>
+            <li><a href="https://9gans.com/?ref=producthunt">Art Gallery Inspiration</a></li>
+            <li><a href="https://towardsdatascience.com/style-transfer-styling-images-with-convolutional-neural-networks-7d215b58f461">Intuitive Understanding</a></li>
+            <li><a href="https://pytorch.org/tutorials/advanced/neural_style_tutorial.html">Style Transfer with PyTorch</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>Computing Resources
+          <ul>
+            <li>Platform: MacOS</li>
+            <li>Google Cloud (Tyler has $300 in cloud computing and a GPU)</li>
+            <li>PyTorch for machine learning</li>
+            <li>React, Node.js (if implementing a dynamic solution) for web development</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

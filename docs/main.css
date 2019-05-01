@@ -1,0 +1,19 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  padding: 2%;
+}
+
+.main-text {
+  width: 85%;
+}
+
+.image-container {
+  padding-top: 3%;
+  padding-bottom: 3%
+}
+
+.example {
+  width: 55%;
+  align: center;
+}
